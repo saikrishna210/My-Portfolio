@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresher Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  
+  <header class="bg-white shadow sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="h-screen flex items-center justify-center bg-blue-100">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Sai krishna chundru</h2>
+      <p class="text-xl text-gray-700">A Fresher Software Engineer</p>
+    </div>
+  </section>
+
+ 
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        I'm a passionate software engineer with a strong foundation in programming, python, javascript and problem-solving. I love building projects that solve real-world problems and continuously learning new technologies.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-xl shadow">HTML</div>
+        <div class="bg-white p-4 rounded-xl shadow">CSS</div>
+        <div class="bg-white p-4 rounded-xl shadow">JavaScript</div>
+        <div class="bg-white p-4 rounded-xl shadow">Python</div>
+        <div class="bg-white p-4 rounded-xl shadow">Sql</div>
+        <div class="bg-white p-4 rounded-xl shadow">GitHub</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Online Payment Fraud Detection</h3>
+          <p class="mt-2 text-gray-600">Used machine learning to detect fraudulent transactions in real time.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Road-lane detection</h3>
+          <p class="mt-2 text-gray-600">Road-lane detection using yolo(you-look-only-once)algorithm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <form id="contactForm" class="grid grid-cols-1 gap-4">
+        <input type="text" id="name" placeholder="Your Name" class="p-3 rounded-xl border border-gray-300" required />
+        <input type="email" id="email" placeholder="Your Email" class="p-3 rounded-xl border border-gray-300" required />
+        <textarea id="message" placeholder="Your Message" rows="4" class="p-3 rounded-xl border border-gray-300" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+ 
+<footer class="bg-white border-t py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm text-gray-600 mb-4 md:mb-0">&copy; 2025 Chundru. All rights reserved.</p>
+      
+      <div class="flex space-x-4">
+        <a href="https://github.com/saikrishna210" target="_blank" class="text-gray-600 hover:text-black transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 008.1 11c.6.1.82-.26.82-.58v-2.02c-3.3.72-3.99-1.58-3.99-1.58-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.09 1.83 1.23 1.83 1.23 1.06 1.82 2.77 1.3 3.45.99.1-.77.42-1.3.76-1.6-2.64-.3-5.43-1.32-5.43-5.86 0-1.3.47-2.36 1.23-3.2-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.22a11.5 11.5 0 016 0C17.7 3.28 18.7 3.6 18.7 3.6c.66 1.62.24 2.82.12 3.12.76.84 1.23 1.9 1.23 3.2 0 4.55-2.8 5.56-5.46 5.86.43.38.82 1.14.82 2.3v3.42c0 .32.22.7.82.58A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/chundru-saikrishna-83215728b/" target="_blank" class="text-gray-600 hover:text-blue-700 transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0H13v2.5h.1c.7-1.3 2.4-2.6 4.9-2.6C22 7.9 24 10 24 14.5V24h-5V15c0-2.3-.8-3.9-2.9-3.9-1.6 0-2.5 1.1-2.9 2.1-.2.5-.2 1.3-.2 2v8H7.5V8z"/>
+          </svg>
+        </a>
+        <a href="chundrukrishna16@gmail.com" class="text-gray-600 hover:text-red-500 transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  </html>
